@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Jubilee - 50 Years</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card-container">
+        <!-- Page 1: Golden Jubilee -->
+        <div class="page page-1">
+            <div class="page-content">
+                <div class="header-section">
+                    <h1 class="main-title">Golden Jubilee</h1>
+                    <p class="subtitle">Celebration</p>
+                    <p class="description">50 Years of Grace & Gratitude</p>
+                </div>
+
+                <div class="decoration">
+                    <span class="star">✨</span>
+                    <span class="star">✨</span>
+                    <span class="star">✨</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 2: Invitation -->
+        <div class="page page-2">
+            <div class="page-content invitation-content">
+                <p class="invitation-intro">With hearts full of gratitude, we cordially invite you to celebrate the 50th
+                    birthday of:</p>
+                <h2 class="birthday-name">Ms. Devi Laurens</h2>
+                <div class="event-details">
+                    <p class="detail-item"><span class="emoji">📅</span> <strong>Sunday, February 22, 2026</strong></p>
+                    <p class="detail-item"><span class="emoji">🕔</span> <strong>5:00 PM onwards</strong></p>
+                    <p class="detail-item"><span class="emoji">📍</span> <strong>Plataran Menteng (2nd
+                            Floor)</strong><br>Jl. H.O.S. Cokroaminoto No. 42, Menteng, Central Jakarta</p>
+                </div>
+                <div class="dress-code">
+                    <p class="dress-title">✨ Dress Code: Heritage</p>
+                    <p class="dress-description">(A touch of Nusantara: Batik, Kebaya, Tenun, or other National Attire)
+                    </p>
+                </div>
+                <p class="closing-text">Your presence and blessings would be the greatest gift of all.</p>
+            </div>
+        </div>
+
+        <!-- Page 3: Closing -->
+        <div class="page page-3">
+            <div class="page-content">
+                <h2 class="rsvp-title">RSVP</h2>
+                <div class="closing-message">
+                    <p>We look forward to celebrating this <br>special milestone with you.</p>
+
+                    <p class="rsvp-instruction">Kindly confirm your attendance by February 19, 2026, via the link below:
+                    </p>
+
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSevrZ-AVR7N7wk3HUUXtwy2ssqKLdqiYzqxU0w66GekpvXaYQ/viewform?usp=header" target="_blank" class="rsvp-button">
+                        Confirm Attendance
+                    </a>
+
+                    <div class="final-closing">
+                        <p>With Love,</p>
+                        <p class="signature">The Laurens Family</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button class="nav-btn" onclick="scrollToPage(0)">1</button>
+            <button class="nav-btn" onclick="scrollToPage(1)">2</button>
+            <button class="nav-btn" onclick="scrollToPage(2)">3</button>
+        </div>
+
+        <!-- Local background audio and music control -->
+        <audio id="bg-audio" src="backsound.mp3" preload="auto"></audio>
+        <div class="music-control" role="region" aria-label="Music control">
+            <button id="music-toggle" class="nav-btn music-btn" aria-pressed="false" title="Toggle music"
+                aria-label="Toggle music">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"
+                    class="music-icon">
+                    <path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2" />
+                    <path fill-rule="evenodd" d="M9 3v10H8V3z" />
+                    <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z" />
+                </svg>
+            </button>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
