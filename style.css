@@ -328,15 +328,14 @@ body {
         padding: 30px 15px;
     }
 
+    .heritage-frame { 
+        top: 10px; left: 10px; right: 10px; bottom: 10px; 
+    }
+    
+
     .page-content {
         gap: 20px !important;
-        background: rgba(0, 0, 0, 0.4);
-        padding: 30px 20px;
-        border-radius: 15px;
-        border: 1px solid rgba(255, 215, 0, 0.3);
-        backdrop-filter: blur(2px);
     }
-
     .main-title {
         text-shadow: 1px 1px 4px rgba(255, 215, 0, 0.5);
     }
@@ -372,6 +371,16 @@ body {
 
     .closing-text {
         margin-top: 15px;
+    }
+
+    .page-3 .page-content {
+        background: rgba(0, 0, 0, 0.6); /* Lebih gelap dikit biar teks jelas */
+        padding: 30px 20px;
+        border-radius: 15px;
+        border: 1px solid rgba(255, 215, 0, 0.3); /* List emas tipis */
+        backdrop-filter: blur(3px); /* Efek blur di belakang kotak */
+        margin: 0 10px; /* Jarak aman dari pinggir layar */
+        box-shadow: 0 4px 15px rgba(0,0,0,0.5);
     }
 }
 
@@ -441,6 +450,9 @@ body {
         font-size: 0.95rem;
         margin-top: 10px;
     }
+
+    .rsvp-button { padding: 12px 25px; font-size: 1rem; }
+    .heritage-frame::before, .heritage-frame::after { width: 80px; height: 80px; }
 }
 
 .music-control {
