@@ -1,8 +1,8 @@
-function scrollToPage(pageIndex) {
-    const container = document.querySelector('.card-container');
-    const pageHeight = container.offsetHeight;
-    container.scrollTop = pageIndex * pageHeight;
-}
+// function scrollToPage(pageIndex) {
+//     const container = document.querySelector('.card-container');
+//     const pageHeight = container.offsetHeight;
+//     container.scrollTop = pageIndex * pageHeight;
+// }
 // Local audio background music control
 document.addEventListener('DOMContentLoaded', function() {
     const btn = document.getElementById('music-toggle');
