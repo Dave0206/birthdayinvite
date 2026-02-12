@@ -40,7 +40,7 @@ body {
 .page-1, .page-2 {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), 
                 url('Mama.jpeg') center/cover no-repeat fixed;
-    /* background-blend-mode: normal; */
+    background-blend-mode: normal;
 }
 
 .page-content {
