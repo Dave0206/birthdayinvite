@@ -35,12 +35,31 @@ body {
         radial-gradient(circle at 100% 50%, transparent 20%, rgba(212, 175, 55, 0.05) 21%, rgba(212, 175, 55, 0.05) 34%, transparent 35%, transparent),
         radial-gradient(circle at 0% 50%, transparent 20%, rgba(212, 175, 55, 0.05) 21%, rgba(212, 175, 55, 0.05) 34%, transparent 35%, transparent);
     background-size: 60px 60px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
-.page-1, .page-2 {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), 
+.page-1 {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 100%), 
                 url('Mama.jpeg') center/cover no-repeat fixed;
     background-blend-mode: normal;
+    align-items: flex-end !important;
+    padding-bottom: 120px;
+}
+
+.page-1 .page-content {
+    margin-top: 0 !important; 
+}
+
+.page-2 {
+    background: linear-gradient(135deg, rgba(45, 36, 18, 0.9) 0%, rgba(26, 20, 16, 0.9) 50%, rgba(13, 10, 8, 0.95) 100%), 
+                url('Mama.jpeg') center/cover no-repeat fixed;
+    background-blend-mode: normal;
+    align-items: flex-start !important;
+    padding-top: 100px; 
+    padding-bottom: 100px;
+    height: auto; 
+    min-height: 100vh;
 }
 
 .page-content {
@@ -63,10 +82,6 @@ body {
     border: 1px solid rgba(255, 215, 0, 0.4);
     border-radius: 8px;
     box-shadow: 0 0 30px rgba(0,0,0,0.5);
-}
-
-.page-1 .page-content {
-    margin-top: 250px;
 }
 
 .header-section {
