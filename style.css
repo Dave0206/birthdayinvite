@@ -12,15 +12,17 @@ body {
 
 .card-container {
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100vh;
     scroll-behavior: smooth;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
 }
 
 .page {
-    min-width: 100%;
+    width: 100%;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -28,7 +30,6 @@ body {
     padding: 40px 20px;
     scroll-snap-align: start;
     position: relative;
-    overflow-y: auto;
 }
 
 .page-1 {
