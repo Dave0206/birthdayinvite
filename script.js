@@ -1,7 +1,7 @@
 function scrollToPage(pageIndex) {
     const container = document.querySelector('.card-container');
-    const pageWidth = container.offsetWidth;
-    container.scrollLeft = pageIndex * pageWidth;
+    const pageHeight = container.offsetHeight;
+    container.scrollTop = pageIndex * pageHeight;
 }
 // Local audio background music control
 document.addEventListener('DOMContentLoaded', function() {
