@@ -30,10 +30,17 @@ body {
     padding: 40px 20px;
     scroll-snap-align: start;
     position: relative;
+    background-color: #1a1a1a;
+    background-image: 
+        radial-gradient(circle at 100% 50%, transparent 20%, rgba(212, 175, 55, 0.05) 21%, rgba(212, 175, 55, 0.05) 34%, transparent 35%, transparent),
+        radial-gradient(circle at 0% 50%, transparent 20%, rgba(212, 175, 55, 0.05) 21%, rgba(212, 175, 55, 0.05) 34%, transparent 35%, transparent);
+    background-size: 60px 60px;
 }
 
-.page-1 {
-    background: linear-gradient(135deg, rgba(45, 36, 18, 0.55) 0%, rgba(26, 20, 16, 0.6) 50%, rgba(13, 10, 8, 0.7) 100%), url('Mama.jpeg') center/cover no-repeat fixed;
+.page-1, .page-2 {
+    background: 
+        linear-gradient(135deg, rgba(45, 36, 18, 0.9) 0%, rgba(26, 20, 16, 0.85) 50%, rgba(13, 10, 8, 0.9) 100%), 
+        url('Mama.jpeg') center/cover no-repeat fixed;
     background-blend-mode: multiply;
 }
 
@@ -47,6 +54,14 @@ body {
     max-width: 600px;
     position: relative;
     z-index: 2;
+    /* Update */
+    padding: 40px;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    outline: 1px solid rgba(255, 215, 0, 0.3);
+    outline-offset: -10px;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    border-radius: 4px;
 }
 
 .page-1 .page-content {
@@ -64,7 +79,8 @@ body {
     text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.9), 2px 2px 8px rgba(255, 215, 0, 0.8);
     font-weight: bold;
     margin-bottom: 10px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    font-variant: small-caps;
 }
 
 .subtitle {
@@ -108,12 +124,6 @@ body {
     animation-delay: 0.6s;
 }
 
-.page-2 {
-    background: linear-gradient(135deg, rgba(45, 36, 18, 0.8) 0%, rgba(26, 20, 16, 0.8) 50%, rgba(13, 10, 8, 0.9) 100%), url('Mama.jpeg') center/cover no-repeat fixed;
-    background-blend-mode: multiply;
-    backdrop-filter: blur(8px);
-}
-
 .page-2 h2 {
     font-size: clamp(2rem, 6vw, 3.5rem);
     color: #FFD700;
@@ -138,6 +148,8 @@ body {
     color: #FFD700;
     text-shadow: 2px 2px 8px rgba(255, 215, 0, 0.5);
     margin: 20px 0;
+    letter-spacing: 3px;
+    font-variant: small-caps;
 }
 
 .event-details {
