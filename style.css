@@ -38,10 +38,9 @@ body {
 }
 
 .page-1, .page-2 {
-    background: 
-        linear-gradient(135deg, rgba(45, 36, 18, 0.9) 0%, rgba(26, 20, 16, 0.85) 50%, rgba(13, 10, 8, 0.9) 100%), 
-        url('Mama.jpeg') center/cover no-repeat fixed;
-    background-blend-mode: normal;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), 
+                url('Mama.jpeg') center/cover no-repeat fixed;
+    /* background-blend-mode: normal; */
 }
 
 .page-content {
